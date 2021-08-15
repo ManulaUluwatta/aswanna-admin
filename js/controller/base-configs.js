@@ -11,3 +11,8 @@ var firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 const db = firebase.firestore();
+
+function getUrlId(param) {
+    let searchParams = new URLSearchParams(window.location.search);
+    return searchParams.get(param)
+}

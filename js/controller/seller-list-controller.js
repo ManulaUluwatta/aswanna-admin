@@ -9,6 +9,12 @@ function _createSellerTableRow(sellerData) {
                     <td>
                         <span class="badge bg-primary">Active</span>
                     </td>
+                    <td>
+                        <a href="seller-detail.html?id=${sellerData.uid}"
+                         class="btn btn-sm btn-dark">
+                            View
+                        </a>
+                    </td>
                 </tr>`;
 }
 
