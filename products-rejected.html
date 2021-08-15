@@ -98,68 +98,11 @@
     <div id="layoutSidenav_content">
         <main>
             <div class="container-fluid px-4">
-                <h3 class="mt-4">Seller Detail - <span class="text-primary" id="seller-id">SRL123123</span></h3>
+                <h3 class="mt-4">Products List <span class="text-danger">(Rejected)</span></h3>
                 <hr>
 
-                <h5>Seller Details</h5>
+                <div class="row" id="products-list">
 
-                <p>
-                    Full Name : &nbsp;&nbsp;&nbsp;
-                    <span id="seller-full-name">Loading</span>
-                    <span class="badge bg-success" id="seller-status">active</span>
-                </p>
-
-                <p>
-                    Address : &nbsp;&nbsp;&nbsp;
-                    <span id="seller-address">Loading</span>
-                </p>
-
-                <h5>Items List</h5>
-
-                <div class="row" id="seller-product-list">
-                    <!--                    <div class="col-md-6 col-lg-6 col-sm-12 mb-2">-->
-                    <!--                        <div class="card">-->
-                    <!--                            <img alt="..." class="card-img-top" src="https://via.placeholder.com/500"-->
-                    <!--                                 style="height: 200px;object-fit: cover;object-position: center;">-->
-                    <!--                            <p class="px-3 py-2 bg-warning text-dark"-->
-                    <!--                               style="position: absolute;border-radius:100px;font-size:12px;margin: auto;top: 10px;right: 10px;left: auto;bottom: auto;width: fit-content;height: fit-content;">-->
-                    <!--                                Exp: <span class="fw-bold" id="exp-date">21/08/12</span>-->
-                    <!--                            </p>-->
-
-                    <!--                            <div class="card-body">-->
-                    <!--                                <h5 class="card-title">-->
-                    <!--                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.-->
-                    <!--                                </h5>-->
-                    <!--                                <p class="card-text">-->
-                    <!--                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt-->
-                    <!--                                    doloremque eos in officia quo quod tenetur? Architecto culpa dicta error-->
-                    <!--                                    nulla quo repellat sint vel! Assumenda culpa quasi sequi sint.-->
-                    <!--                                </p>-->
-                    <!--                                <p class="card-text">-->
-                    <!--                                    <label class="w-100">Price (Net.) :-->
-                    <!--                                        <span style="font-size: 24px;">350.00</span>-->
-                    <!--                                    </label>-->
-                    <!--                                    <label class="w-100">Available QTY :-->
-                    <!--                                        <span style="font-size: 24px;">20</span>-->
-                    <!--                                        <span>(Minimum : 200)</span>-->
-                    <!--                                    </label>-->
-                    <!--                                    <label class="w-100">Type : <span>Category - Sub Category</span></label>-->
-                    <!--                                    <label class="w-100">Rating ⭐ : 3.0</label>-->
-                    <!--                                </p>-->
-
-                    <!--                                <p class="mb-0">Tags</p>-->
-
-                    <!--                                <div class="d-flex flex-wrap mb-1">-->
-                    <!--                                    <label class="text-light bg-secondary rounded-pill px-3 py-2 m-1"-->
-                    <!--                                           style="font-size: 12px;">Tag Name</label>-->
-                    <!--                                </div>-->
-                    <!--                                <div class="d-flex flex-wrap">-->
-                    <!--                                    <a class="btn btn-sm btn-primary m-1" href="#">Customize</a>-->
-                    <!--                                    <a class="btn btn-sm text-danger m-1" href="#">Remove</a>-->
-                    <!--                                </div>-->
-                    <!--                            </div>-->
-                    <!--                        </div>-->
-                    <!--                    </div>-->
                 </div>
             </div>
         </main>
@@ -177,7 +120,6 @@
         </footer>
     </div>
 </div>
-
 <script crossorigin="anonymous"
         integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg=="
         referrerpolicy="no-referrer" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -197,8 +139,6 @@ https://firebase.google.com/docs/web/setup#available-libraries -->
 <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js"></script>
 
 <script src="js/controller/base-configs.js"></script>
-
-<script src="js/controller/seller-detail-controller.js"></script>
-
+<script src="js/controller/products-list-rejected-controller.js"></script>
 </body>
 </html>
