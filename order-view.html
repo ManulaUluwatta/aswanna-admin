@@ -97,7 +97,7 @@
     <div id="layoutSidenav_content">
         <main>
             <div class="container-fluid px-4">
-                <h3 class="mt-4">Orders Detail -  <span class="text-primary">ODR12312</span></h3>
+                <h3 class="mt-4">Orders Detail - <span class="text-primary" id="orderIdPreview">ODR12312</span></h3>
                 <hr>
 
                 <div class="row">
@@ -106,17 +106,32 @@
 
                         <p>
                             Customer Name : <br>
-                            Don Juwan Dharmapala
+                            <span id="customerNamePreview"></span>
                         </p>
 
                         <p>
                             Shipping Address : <br>
-                            3Rd Lane, 4th junction, This town, Baththaramulla.
+                            <span id="customerAddressPreview"></span>
+                        </p>
+
+                        <p>
+                            Delivery Option : <br>
+                            <span id="deliveryOptionPreview">loading</span>
+                        </p>
+
+                        <p>
+                            Order Date : <br>
+                            <span id="orderDatePreview">loading</span>
+                        </p>
+
+                        <p>
+                            Order Status : <br>
+                            <span class="badge" id="statusPreview">loading</span>
                         </p>
 
                         <h5>
                             Total : <br>
-                            $5200.00
+                            $ <span id="orderTotalPreview">0.00</span>
                         </h5>
                     </div>
                     <div class="col-sm-6 col-lg-6 col-sm-12">
@@ -132,38 +147,6 @@
                                 <th>Total</th>
                             </tr>
                             </thead>
-                            <tbody>
-                            <tr>
-                                <td>ITM21321</td>
-                                <td class="fw-bold">Item Name Here</td>
-                                <td>
-                                    3
-                                </td>
-                                <td>
-                                    $300
-                                </td>
-                                <td class="d-flex flex-row justify-content-between">
-                                    <span>3 x $300</span>
-                                    <h4 class="text-secondary mb-0">$900.00</h4>
-                                </td>
-                            </tr>
-                            </tbody>
-                            <tbody>
-                            <tr>
-                                <td>ITM21321</td>
-                                <td class="fw-bold">Item Name Here</td>
-                                <td>
-                                    3
-                                </td>
-                                <td>
-                                    $300
-                                </td>
-                                <td class="d-flex flex-row justify-content-between">
-                                    <span>3 x $300</span>
-                                    <h4 class="text-secondary mb-0">$900.00</h4>
-                                </td>
-                            </tr>
-                            </tbody>
                             <tbody>
                             <tr>
                                 <td>ITM21321</td>
@@ -218,5 +201,7 @@ https://firebase.google.com/docs/web/setup#available-libraries -->
 <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js"></script>
 
 <script src="js/controller/base-configs.js"></script>
+
+<script src="js/controller/order-detail-controller.js"></script>
 </body>
 </html>

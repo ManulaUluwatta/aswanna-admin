@@ -31,7 +31,7 @@ function createTableRow(order) {
         <h4 class="fw-bold mb-0">$ ${total}</h4>
       </td>
       <td>
-        <span class="badge bg-primary">${order.status}</span>
+        <span class="badge ${order.status === "complete" ? "bg-primary" : "bg-secondary"}">${order.status}</span>
       </td>
       <td>
         <a href="order-view.html?id=${order.order_id}" class="btn btn-sm btn-dark">
