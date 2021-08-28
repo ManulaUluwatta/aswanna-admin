@@ -73,8 +73,9 @@ $(document).ready(function () {
                     });
                 }).then(() => {
                     $.each(ordersList, (key, value) => {
-                        // console.log(key);
-                        orderTableBody.append(createTableRow(value));
+                        if (value.status !== "rejected") {
+                            orderTableBody.append(createTableRow(value));
+                        }
                     });
                 });
             });

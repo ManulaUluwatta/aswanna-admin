@@ -55,8 +55,6 @@ function loadOrderDetail() {
     if (searchParams.has("id")) {
         const orderId = searchParams.get("id");
 
-        // console.log(orderId);
-
         db.collection("products").get().then(productSS => {
             productSS.forEach(product => {
                 productsList[product.id] = product.data();
@@ -86,8 +84,6 @@ function loadOrderDetail() {
                     updateOrderPreview(orderData);
                     return orderData;
                 }).then((orderData) => {
-                    // console.log(orderData);
-
                     let orderQuery = db.collection("order_details")
                         .where("order_id", "==", orderData.order_id)
 
