@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+    <meta content="" name="description"/>
+    <meta content="" name="author"/>
+    <title>Dashboard - අස්වැන්න </title>
+    <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet"/>
+    <link href="css/styles.css" rel="stylesheet"/>
+    <script crossorigin="anonymous"
+            src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+
+    <link href="css/override.css" rel="stylesheet">
+</head>
+<body class="sb-nav-fixed">
+<nav class="sb-topnav navbar navbar-expand navbar-dark bg-primary">
+    <!-- Navbar Brand-->
+    <a class="navbar-brand ps-3" href="index.html">අස්වැන්න Admin</a>
+    <!-- Sidebar Toggle-->
+    <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" href="#!" id="sidebarToggle"><i
+            class="fas fa-bars"></i></button>
+    <!-- Navbar-->
+    <ul class="navbar-nav ms-auto ms-md-auto ms-lg-auto  me-lg-3 me-md-3 ms-sm-0">
+        <li class="nav-item dropdown">
+            <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
+               id="navbarDropdown"
+               role="button"><i class="fas fa-user fa-fw"></i></a>
+            <ul aria-labelledby="navbarDropdown" class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="#!">Profile</a></li>
+                <li><a class="dropdown-item" href="login.html">Logout</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+<div id="layoutSidenav">
+    <div id="layoutSidenav_nav">
+        <nav class="sb-sidenav accordion sb-sidenav-light bg-light" id="sidenavAccordion">
+            <div class="sb-sidenav-menu">
+                <div class="nav" id="side-menu">
+                    <div class="sb-sidenav-menu-heading">Core</div>
+                    <a class="nav-link" href="index.html">
+                        <div class="sb-nav-link-icon"><i class="fas fa-th-large"></i></div>
+                        Dashboard
+                    </a>
+
+                    <div class="sb-sidenav-menu-heading">Order</div>
+                    <a class="nav-link" href="orders-list.html">
+                        <div class="sb-nav-link-icon"><i class="fas fa-th-list"></i></div>
+                        Order List
+                    </a>
+                    <a class="nav-link" href="orders-rejected.html">
+                        <div class="sb-nav-link-icon"><i class="fas fa-ban"></i></div>
+                        View Rejected
+                    </a>
+
+                    <div class="sb-sidenav-menu-heading">Products</div>
+                    <a class="nav-link" href="products-list.html">
+                        <div class="sb-nav-link-icon"><i class="fas fa-th-list"></i></div>
+                        Products List
+                    </a>
+                    <a class="nav-link" href="products-rejected.html">
+                        <div class="sb-nav-link-icon"><i class="fas fa-ban"></i></div>
+                        View Rejected
+                    </a>
+
+                    <div class="sb-sidenav-menu-heading">Sellers</div>
+                    <a class="nav-link" href="seller-list.html">
+                        <div class="sb-nav-link-icon"><i class="fas fa-user-tie"></i></div>
+                        Manage Sellers
+                    </a>
+                    <a class="nav-link" href="seller-list-banned.html">
+                        <div class="sb-nav-link-icon"><i class="fas fa-ban"></i></div>
+                        View Banned
+                    </a>
+
+                    <div class="sb-sidenav-menu-heading">Customers</div>
+                    <a class="nav-link" href="customers-list.html">
+                        <div class="sb-nav-link-icon"><i class="fas fa-user"></i></div>
+                        Manage Customers
+                    </a>
+                    <a class="nav-link" href="customers-list-banned.html">
+                        <div class="sb-nav-link-icon"><i class="fas fa-ban"></i></div>
+                        View Banned
+                    </a>
+
+                    <div class="sb-sidenav-menu-heading">Reports</div>
+                    <a class="nav-link" href="#">
+                        <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+                        Total Earnings
+                    </a>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div id="layoutSidenav_content">
+        <main>
+            <div class="container-fluid px-4">
+                <h3 class="mt-4">Total Earnings Chart</h3>
+                <hr>
+
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <i class="fas fa-table me-1"></i>
+                        All Orders List
+                    </div>
+                    <div class="card-body">
+                        <canvas id="barChartEarnings"></canvas>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="py-4 bg-light mt-auto">
+            <div class="container-fluid px-4">
+                <div class="d-flex align-items-center justify-content-between small">
+                    <div class="text-muted">Copyright &copy; Your Website 2021</div>
+                    <div>
+                        <a href="#">Privacy Policy</a>
+                        &middot;
+                        <a href="#">Terms &amp; Conditions</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+<script crossorigin="anonymous"
+        integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg=="
+        referrerpolicy="no-referrer" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script crossorigin="anonymous"
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/scripts.js"></script>
+<script crossorigin="anonymous" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+<script crossorigin="anonymous" src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
+<script src="js/datatables-simple-demo.js"></script>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js"></script>
+
+<script src="js/controller/base-configs.js"></script>
+<script src="js/controller/report-total-earnings-controller.js"></script>
+</body>
+</html>
